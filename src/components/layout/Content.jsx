@@ -16,9 +16,7 @@ import UseCustom from '../../views/examples/UseCustom'
 const Content = props => (
     <main className="Content">
         <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
+
             <Route path="/useState">
                 <UseState />
             </Route>
@@ -45,6 +43,9 @@ const Content = props => (
             </Route>
             <Route path="*">
                 <NotFound />
+            </Route>            
+            <Route exact path="/">
+                <Home />
             </Route>
         </Switch>
     </main>
